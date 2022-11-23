@@ -40,3 +40,6 @@ viz_correlation = sns.heatmap(df_cars.corr(),
 								)
 
 st.pyplot(viz_correlation.figure)
+
+st.button("Region")
+st.write(df_cars["continent"])

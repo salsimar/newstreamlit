@@ -24,3 +24,19 @@ viz_correlation = sns.heatmap(df_weather.corr(),
 								)
 
 st.pyplot(viz_correlation.figure)
+
+import pandas as pd
+link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
+df_cars = pd.read_csv(link)
+df_cars
+
+st.line_chart(df_cars['time-to-60'])
+
+import seaborn as sns
+import matplotlib as plt
+viz_correlation = sns.heatmap(df_cars.corr(), 
+								center=0,
+								cmap = sns.color_palette("vlag", as_cmap=True)
+								)
+
+st.pyplot(viz_correlation.figure)

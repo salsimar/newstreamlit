@@ -40,15 +40,3 @@ viz_correlation = sns.heatmap(df_cars.corr(),
 								)
 
 st.pyplot(viz_correlation.figure)
-
-result1 = st.button("US")
-if result1:
-	st.write(df_cars["continent"]=="US.")
-
-result2 = st.button("Europe")
-if result2:
-st.write(df_cars["continent"]=="Europe.")
-
-result3 = st.button("Japan")
-if result3:
-st.write((df_cars["continent"]=="Japan.")
